@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" />
+</head>
+
+<body>
+    <div
+        class="w-full bg-whitesmoke overflow-hidden flex flex-row items-start justify-start gap-[45px] text-left text-[64px] text-black font-roboto mq900:gap-[22px] mq1600:flex-wrap">
+        <div
+            class="w-[393px] shadow bg-white flex flex-col items-end justify-start pt-[36px] px-0 pb-4 box-border gap-[33px] max-w-full mq450:gap-[16px] mq450:pt-5 mq450:box-border mq1275:pt-[23px] mq1275:pb-5 mq1275:box-border">
+            <div class="self-stretch h-full relative shadow bg-white hidden"></div>
+            <div
+                class="self-stretch flex flex-row items-start justify-end pt-0 pb-2.5 pr-[21px] pl-6 box-border max-w-full text-center text-seagreen-200 font-inter">
+                <h1 class="m-0 flex-1 relative font-bold inline-block max-w-full text-teal-800">CBRE</h1>
+            </div>
+            <div
+                class="self-stretch flex flex-row items-start justify-end py-0 pr-[17px] pl-[22px] box-border max-w-full text-xl">
+                <div class="flex-1 flex flex-col items-start justify-start gap-[6.7px] max-w-full">
+                    <div class="w-[271px] flex flex-row items-start justify-start py-0 px-0.5 box-border text-7xl">
+                        <b class="flex-1 relative z-[1] mq450:text-2xl">Notifications</b>
+                    </div>
+                    <div class="self-stretch flex flex-row items-end justify-start pt-3 pb-[13px] pr-[3px] pl-3.5 relative gap-[14px] cursor-pointer z-[1] mq450:flex-wrap"
+                        id="notifCardContainer">
+                        <div
+                            class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl bg-seagreen-300 box-border border-[0.3px] border-solid border-seagreen-100">
+                        </div>
+                        <img class="h-14 w-14 relative rounded-[50%] object-contain z-[1]" loading="lazy" alt=""
+                            src="/public/ellipse-1@2x.png" />
+
+                        <div class="flex-1 flex flex-col items-start justify-start min-w-[174px]">
+                            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-px pl-0">
+                                <b class="flex-1 relative z-[1] mq450:text-base">Rohan Kapoor</b>
+                                <div
+                                    class="w-[88px] flex flex-row items-end justify-start gap-[5px] ml-[-89px] text-2xs text-gray-100 font-inter">
+                                    <div class="flex flex-col items-start justify-end pt-0 px-0 pb-px">
+                                        <div class="w-2.5 h-2.5 relative rounded-[50%] bg-seagreen-100 z-[1]"></div>
+                                    </div>
+                                    <div class="flex-1 relative z-[1]">3 mins ago</div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-[249px] relative text-base font-inter text-gray-100 flex items-center z-[1] mt-[-6px]">
+                                <span class="w-full">
+                                    <p class="m-0">From Outlook</p>
+                                    <p class="m-0">Re : Expanding horizons...</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex flex-row items-end justify-start pt-3 pb-[13px] pr-[3px] pl-3.5 relative gap-[14px] z-[1] mq450:flex-wrap">
+                        <div
+                            class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl bg-gainsboro">
+                        </div>
+                        <img class="h-14 w-14 relative rounded-[50%] object-contain z-[1]" alt=""
+                            src="/public/ellipse-1-1@2x.png" />
+
+                        <div
+                            class="flex-1 flex flex-row items-start justify-start py-0 pr-px pl-0 box-border min-w-[174px]">
+                            <div class="flex-1 flex flex-col items-start justify-start">
+                                <b
+                                    class="self-stretch h-7 relative inline-block shrink-0 [debug_commit:1de1738] z-[1] mq450:text-base">Client
+                                    Name</b>
+                                <div
+                                    class="w-[249px] h-8 flex flex-row items-start justify-start pt-0 px-0 pb-0 box-border text-base text-gray-100 font-inter">
+                                    <div class="mt-[-6px] flex-1 relative shrink-0 [debug_commit:1de1738] z-[1]">
+                                        <p class="m-0">From Outlook</p>
+                                        <p class="m-0">Re : New Opportunities...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="relative text-2xs font-inter text-gray-100 inline-block min-w-[73px] z-[1] ml-[-74px]">
+                                30 mins ago
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex flex-row items-end justify-start pt-3 pb-[13px] pr-[3px] pl-3.5 relative gap-[14px] z-[1] mq450:flex-wrap">
+                        <div
+                            class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl bg-gainsboro">
+                        </div>
+                        <img class="h-14 w-14 relative rounded-[50%] object-contain z-[1]" alt=""
+                            src="/public/ellipse-1-2@2x.png" />
+
+                        <div
+                            class="flex-1 flex flex-row items-start justify-start py-0 pr-px pl-0 box-border min-w-[174px]">
+                            <div class="flex-1 flex flex-col items-start justify-start">
+                                <b
+                                    class="self-stretch h-7 relative inline-block shrink-0 [debug_commit:1de1738] z-[1] mq450:text-base">Client
+                                    Name</b>
+                                <div
+                                    class="w-[249px] h-8 flex flex-row items-start justify-start pt-0 px-0 pb-0 box-border text-base text-gray-100 font-inter">
+                                    <div class="mt-[-6px] flex-1 relative shrink-0 [debug_commit:1de1738] z-[1]">
+                                        <p class="m-0">From Outlook</p>
+                                        <p class="m-0">Re : New Opportunities...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="relative text-2xs font-inter text-gray-100 inline-block min-w-[73px] z-[1] ml-[-74px]">
+                                53 mins ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[174px] gap-[13px] text-7xl mq900:pb-[113px] mq900:box-border">
+                <div class="w-[315px] flex flex-row items-start justify-start py-0 px-6 box-border">
+                    <b class="flex-1 relative z-[1] mq450:text-2xl">Conversation History</b>
+                </div>
+                <div class="self-stretch flex flex-col items-start justify-start text-xl">
+                    <div
+                        class="w-[123px] flex flex-row items-start justify-start py-0 px-[25px] box-border text-base text-gray-100 font-inter">
+                        <div class="flex-1 relative z-[1]">Today</div>
+                    </div>
+                    <div class="self-stretch flex flex-col items-start justify-start">
+                        <div class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-2.5 gap-[1px]">
+                            <div
+                                class="self-stretch bg-white flex flex-row items-end justify-start pt-[5px] px-6 pb-2.5 relative gap-[11px] z-[1] mq450:flex-wrap">
+                                <div
+                                    class="w-[207px] absolute !m-[0] top-[14px] left-[80px] flex items-center mq450:text-base">
+                                    Manastu Space
+                                </div>
+                                <img class="h-[45px] w-[45px] relative" alt="" src="/public/chat-icon.svg" />
+
+                                <div class="w-[207px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border">
+                                    <div class="self-stretch relative z-[1] mq450:text-base">
+                                        Manastu Space
+                                    </div>
+                                </div>
+                                <img class="h-[45px] w-[45px] absolute !m-[0] top-[5px] left-[24px] z-[1]" alt=""
+                                    src="/public/chat-icon.svg" />
+
+                                <div class="flex flex-col items-start justify-end pt-0 px-0 pb-2.5">
+                                    <div class="flex flex-row items-start justify-start relative">
+                                        <img class="h-6 w-6 relative overflow-hidden shrink-0" alt=""
+                                            src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+
+                                        <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full z-[1]"
+                                            alt="" src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[11px]">
+                                    <div class="flex flex-row items-start justify-start relative">
+                                        <img class="h-6 w-6 relative overflow-hidden shrink-0" alt=""
+                                            src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+
+                                        <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full z-[1]"
+                                            alt="" src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                    <div
+                                        class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[2]">
+                                    </div>
+                                    <div
+                                        class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[3]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-[213px] flex flex-row items-start justify-start py-0 px-[25px] box-border text-base text-gray-100 font-inter">
+                                <div class="flex-1 relative z-[1]">Past 7 Days</div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-end justify-start pt-[5px] px-6 pb-2.5 relative gap-[11px] z-[1] mq450:flex-wrap">
+                            <div class="w-[207px] relative hidden items-center h-7 shrink-0 z-[0] mq450:text-base">
+                                Manastu Space
+                            </div>
+                            <img class="h-[45px] w-[45px] relative" alt="" src="/public/chat-icon.svg" />
+
+                            <div class="w-[207px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border">
+                                <div class="self-stretch h-7 relative flex items-center shrink-0 mq450:text-base">
+                                    New Chat
+                                </div>
+                            </div>
+                            <img class="h-[45px] w-[45px] absolute !m-[0] top-[5px] left-[24px] z-[1]" alt=""
+                                src="/public/chat-icon.svg" />
+
+                            <div class="flex flex-col items-start justify-end pt-0 px-0 pb-2.5">
+                                <div class="flex flex-row items-start justify-start relative">
+                                    <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                        alt="" src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+
+                                    <img class="h-6 w-6 relative overflow-hidden shrink-0 z-[1]" alt=""
+                                        src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[11px]">
+                                <div class="flex flex-row items-start justify-start relative">
+                                    <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                        alt="" src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+
+                                    <img class="h-6 w-6 relative overflow-hidden shrink-0 z-[1]" alt=""
+                                        src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+                                </div>
+                            </div>
+                            <div class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[2]">
+                                </div>
+                                <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[3]">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-end justify-start pt-[5px] px-6 pb-2.5 relative gap-[11px] z-[1] mq450:flex-wrap">
+                            <div class="w-[207px] relative hidden items-center h-7 shrink-0 z-[0] mq450:text-base">
+                                Manastu Space
+                            </div>
+                            <img class="h-[45px] w-[45px] relative z-[1]" alt="" src="/public/chat-icon.svg" />
+
+                            <img class="h-[45px] w-[45px] absolute !m-[0] top-[5px] left-[24px]" alt=""
+                                src="/public/chat-icon.svg" />
+
+                            <div class="w-[207px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border">
+                                <div class="self-stretch h-7 relative flex items-center shrink-0 mq450:text-base">
+                                    New Chat
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-end pt-0 px-0 pb-2.5">
+                                <div class="flex flex-row items-start justify-start relative">
+                                    <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                        alt="" src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+
+                                    <img class="h-6 w-6 relative overflow-hidden shrink-0 z-[1]" alt=""
+                                        src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[11px]">
+                                <div class="flex flex-row items-start justify-start relative">
+                                    <img class="h-6 w-6 relative overflow-hidden shrink-0" alt=""
+                                        src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+
+                                    <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full z-[1]"
+                                        alt="" src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+                                </div>
+                            </div>
+                            <div class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[2]">
+                                </div>
+                                <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[3]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch flex flex-row items-end justify-start pt-[5px] px-6 pb-2.5 relative gap-[11px] z-[1] mq450:flex-wrap">
+                        <div class="w-[207px] relative hidden items-center h-7 shrink-0 z-[0] mq450:text-base">
+                            Manastu Space
+                        </div>
+                        <img class="h-[45px] w-[45px] relative z-[1]" alt="" src="/public/chat-icon.svg" />
+
+                        <img class="h-[45px] w-[45px] absolute !m-[0] top-[5px] left-[24px]" alt=""
+                            src="/public/chat-icon.svg" />
+
+                        <div class="w-[207px] flex flex-col items-start justify-end pt-0 px-0 pb-2 box-border">
+                            <div class="self-stretch h-7 relative flex items-center shrink-0 mq450:text-base">
+                                New Chat
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start justify-end pt-0 px-0 pb-2.5">
+                            <div class="flex flex-row items-start justify-start relative">
+                                <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                    alt="" src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+
+                                <img class="h-6 w-6 relative overflow-hidden shrink-0 z-[1]" alt=""
+                                    src="/public/more-horiz-fill0-wght400-grad0-opsz24-1-1.svg" />
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[11px]">
+                            <div class="flex flex-row items-start justify-start relative">
+                                <img class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
+                                    alt="" src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+
+                                <img class="h-6 w-6 relative overflow-hidden shrink-0 z-[1]" alt=""
+                                    src="/public/archive-fill0-wght400-grad0-opsz24-1.svg" />
+                            </div>
+                        </div>
+                        <div class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                            <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[2]">
+                            </div>
+                            <div class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] z-[3]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="self-stretch flex flex-row items-start justify-end py-0 px-[61px] mq450:pl-5 mq450:pr-5 mq450:box-border">
+                <button
+                    class="cursor-pointer py-2.5 pr-[11px] pl-[13px] bg-gray-200 flex-1 rounded-md flex flex-row items-end justify-start gap-[21px] z-[1] border-[0.5px] border-solid border-darkslategray-100">
+                    <div
+                        class="h-[65px] w-[271px] relative rounded-md bg-gray-200 box-border hidden border-[0.5px] border-solid border-darkslategray-100">
+                    </div>
+                    <div class="flex-1 flex flex-row items-start justify-start gap-[13px]">
+                        <img class="h-[43px] w-[43px] relative rounded-[50%] object-cover z-[1]" alt=""
+                            src="/public/profile-picture@2x.png" />
+
+                        <div class="flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0">
+                            <div
+                                class="self-stretch relative text-xl font-roboto text-black text-left z-[1] mq450:text-base">
+                                John Doe
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[3px]">
+                        <img class="w-9 h-9 relative overflow-hidden shrink-0 z-[1]" alt=""
+                            src="/public/settings.svg" />
+                    </div>
+                </button>
+            </div>
+        </div>
+        <main
+            class="w-[1248px] flex flex-col items-start justify-start pt-[45px] px-0 pb-0 box-border max-w-full mq450:pt-5 mq450:box-border mq1275:pt-[29px] mq1275:box-border">
+            <section
+                class="self-stretch flex flex-col items-start justify-start gap-[222px] max-w-full text-center text-[48px] text-black font-inter mq900:gap-[55px] mq450:gap-[28px] mq1275:gap-[111px]">
+                <div class="self-stretch flex flex-row items-start justify-start pt-0 px-0 pb-40 box-border max-w-full">
+                    <header
+                        class="h-[89px] flex-1 flex flex-col items-end justify-start pt-0 px-0 pb-6 box-border gap-[24px] max-w-full text-left text-xl text-black font-roboto">
+                        <div
+                            class="w-[1226px] flex flex-row items-start justify-end py-0 px-[19px] box-border max-w-full shrink-0">
+                            <div class="flex-1 flex flex-row items-start justify-between max-w-full gap-[20px]">
+                                <div
+                                    class="w-[166px] flex flex-col items-start justify-start pt-[19px] px-0 pb-0 box-border text-gray-100">
+                                    <div
+                                        class="w-[99px] flex flex-row items-start justify-start py-0 pr-5 pl-0 box-border gap-[4.5px]">
+                                        <img class="h-[28.6px] w-[28.6px] relative overflow-hidden shrink-0"
+                                            loading="lazy" alt="" src="/public/help-outline.svg" />
+
+                                        <div class="h-[29.3px] flex-1 relative flex items-center">
+                                            Help
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1
+                                    class="m-0 w-[354px] relative text-[54px] font-bold font-inter text-center inline-block shrink-0 max-w-full">
+                                    <span>Ask</span>
+                                    <span class="text-seagreen-200">Nidhi</span>
+                                </h1>
+                                <div
+                                    class="w-[190px] flex flex-col items-start justify-start pt-[5px] px-0 pb-0 box-border text-base">
+                                    <div class="self-stretch h-[59px] relative">
+                                        <div
+                                            class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] flex flex-row items-start justify-start">
+                                            <div
+                                                class="flex-1 flex flex-row items-start justify-end py-2.5 px-3 relative whitespace-nowrap">
+                                                <div
+                                                    class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-xl bg-seagreen-300 box-border border-[0.5px] border-solid border-darkslategray-100">
+                                                </div>
+                                                <div class="h-[39px] relative font-light flex items-center z-[1]">
+                                                    New Conversation
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="absolute h-[50.85%] w-[15.79%] top-[23.73%] right-[78.42%] bottom-[25.42%] left-[5.79%] max-w-full overflow-hidden max-h-full z-[1]"
+                                            loading="lazy" alt=""
+                                            src="/public/add-circle-fill0-wght400-grad0-opsz24-1.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="self-stretch relative max-w-full overflow-hidden max-h-full shrink-0" loading="lazy"
+                            alt="" src="/public/line-2.svg" />
+                    </header>
+                </div>
+                <div
+                    class="self-stretch flex flex-row items-start justify-center py-0 pr-[22px] pl-5 box-border max-w-full">
+                    <div class="w-[620px] flex flex-col items-start justify-start gap-[15px] max-w-full">
+                        <h1
+                            class="m-0 self-stretch relative text-inherit leading-[38px] font-semibold font-inherit mq900:text-19xl mq900:leading-[30px] mq450:text-[29px] mq450:leading-[23px]">
+                            Welcome back John Doe!
+                        </h1>
+                        <div
+                            class="flex flex-row items-start justify-start py-0 px-[78px] box-border max-w-full text-[24px] mq900:pl-[39px] mq900:pr-[39px] mq900:box-border">
+                            <div
+                                class="w-[454px] relative font-light inline-block shrink-0 max-w-full mq450:text-[19px]">
+                                How may I assist you today?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch flex flex-row items-start justify-center py-0 pr-[22px] pl-5 box-border max-w-full text-left text-xl text-seagreen-100 font-roboto">
+                    <div class="w-[1080px] flex flex-col items-start justify-start gap-[29px] max-w-full">
+                        <div
+                            class="w-[1073px] overflow-x-auto flex flex-col items-start justify-start gap-[7px] max-w-full">
+                            <div class="w-[1073px] flex flex-row items-start justify-start gap-[7px]">
+                                <div
+                                    class="flex-1 flex flex-row items-start justify-start pt-[18px] px-[35px] pb-2.5 box-border relative max-w-full">
+                                    <div
+                                        class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border border-[0.5px] border-solid border-gray-100">
+                                        </div>
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border z-[1] border-[1px] border-solid border-gray-100">
+                                        </div>
+                                    </div>
+                                    <div class="w-[460px] flex flex-row items-start justify-start relative max-w-full">
+                                        <div
+                                            class="h-[55px] flex-1 relative inline-block max-w-full z-[2] mq450:text-base">
+                                            <span>@LeasingAssist</span>
+                                            <span class="text-gray-100">
+                                                Capture news articles for Investment Category from
+                                                India for last week</span>
+                                        </div>
+                                        <img class="h-[18px] w-[21px] absolute !m-[0] right-[31px] bottom-[11px] overflow-hidden shrink-0 z-[2]"
+                                            alt="" src="/public/arrow-forward.svg" />
+                                    </div>
+                                    <div
+                                        class="h-[55px] w-[460px] absolute !m-[0] bottom-[10px] left-[35px] inline-block z-[3] mq450:text-base">
+                                        <span>@LeasingAssist</span>
+                                        <span class="text-gray-100">
+                                            Capture news articles for Investment Category from India
+                                            for last week</span>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start pt-[26px] px-0 pb-0 ml-[-52px]">
+                                        <img class="w-[21px] h-[18px] relative overflow-hidden shrink-0 z-[3]" alt=""
+                                            src="/public/arrow-forward.svg" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-row items-start justify-start pt-[18px] px-[35px] pb-2.5 box-border relative max-w-full">
+                                    <div
+                                        class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border border-[0.5px] border-solid border-gray-100">
+                                        </div>
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border z-[1] border-[1px] border-solid border-gray-100">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="w-[460px] !m-[0] absolute top-[18px] left-[35px] flex flex-row items-start justify-start max-w-full">
+                                        <div
+                                            class="h-[55px] flex-1 relative inline-block max-w-full z-[2] mq450:text-base">
+                                            <span>@LeasingAssist</span>
+                                            <span class="text-gray-100">
+                                                Capture news articles for Investment Category from
+                                                India for last week</span>
+                                        </div>
+                                        <img class="h-[18px] w-[21px] absolute !m-[0] right-[31px] bottom-[11px] overflow-hidden shrink-0 z-[2]"
+                                            alt="" src="/public/arrow-forward.svg" />
+                                    </div>
+                                    <div
+                                        class="h-[55px] w-[460px] relative inline-block shrink-0 max-w-full z-[3] mq450:text-base">
+                                        <span>@LeasingAssist</span>
+                                        <span class="text-gray-100">
+                                            Capture news articles for Investment Category from India
+                                            for last week</span>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start pt-[26px] px-0 pb-0 ml-[-52px]">
+                                        <img class="w-[21px] h-[18px] relative overflow-hidden shrink-0 z-[3]" alt=""
+                                            src="/public/arrow-forward.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[1073px] flex flex-row items-start justify-start gap-[7px]">
+                                <div
+                                    class="flex-1 flex flex-row items-start justify-start pt-[18px] px-[35px] pb-2.5 box-border relative max-w-full">
+                                    <div
+                                        class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border border-[0.5px] border-solid border-gray-100">
+                                        </div>
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border z-[1] border-[1px] border-solid border-gray-100">
+                                        </div>
+                                    </div>
+                                    <div class="w-[460px] flex flex-row items-start justify-start relative max-w-full">
+                                        <div
+                                            class="h-[55px] flex-1 relative inline-block max-w-full z-[2] mq450:text-base">
+                                            <span>@LeasingAssist</span>
+                                            <span class="text-gray-100">
+                                                Capture news articles for Investment Category from
+                                                India for last week</span>
+                                        </div>
+                                        <img class="h-[18px] w-[21px] absolute !m-[0] right-[31px] bottom-[11px] overflow-hidden shrink-0 z-[3]"
+                                            alt="" src="/public/arrow-forward.svg" />
+                                    </div>
+                                    <div
+                                        class="h-[55px] w-[460px] absolute !m-[0] bottom-[10px] left-[35px] inline-block z-[3] mq450:text-base">
+                                        <span>@LeasingAssist</span>
+                                        <span class="text-gray-100">
+                                            Capture news articles for Investment Category from India
+                                            for last week</span>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start pt-[26px] px-0 pb-0 ml-[-52px]">
+                                        <img class="w-[21px] h-[18px] relative overflow-hidden shrink-0 z-[2]" alt=""
+                                            src="/public/arrow-forward.svg" />
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-row items-start justify-start pt-[18px] px-[35px] pb-2.5 box-border relative max-w-full">
+                                    <div
+                                        class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border border-[0.5px] border-solid border-gray-100">
+                                        </div>
+                                        <div
+                                            class="absolute h-full w-full top-[0px] right-[0px] bottom-[0px] left-[0px] rounded-md bg-gray-200 box-border z-[1] border-[1px] border-solid border-gray-100">
+                                        </div>
+                                    </div>
+                                    <div class="w-[460px] flex flex-row items-start justify-start relative max-w-full">
+                                        <div
+                                            class="h-[55px] flex-1 relative inline-block max-w-full z-[2] mq450:text-base">
+                                            <span>@LeasingAssist</span>
+                                            <span class="text-gray-100">
+                                                Capture news articles for Investment Category from
+                                                India for last week</span>
+                                        </div>
+                                        <img class="h-[18px] w-[21px] absolute !m-[0] right-[31px] bottom-[11px] overflow-hidden shrink-0 z-[3]"
+                                            alt="" src="/public/arrow-forward.svg" />
+                                    </div>
+                                    <div
+                                        class="h-[55px] w-[460px] absolute !m-[0] bottom-[10px] left-[35px] inline-block z-[3] mq450:text-base">
+                                        <span>@LeasingAssist</span>
+                                        <span class="text-gray-100">
+                                            Capture news articles for Investment Category from India
+                                            for last week</span>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start pt-[26px] px-0 pb-0 ml-[-52px]">
+                                        <img class="w-[21px] h-[18px] relative overflow-hidden shrink-0 z-[2]" alt=""
+                                            src="/public/arrow-forward.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer
+                            class="self-stretch flex flex-col items-end justify-start pt-2.5 pb-3 pr-[27px] pl-2 box-border relative gap-[8px] max-w-full text-left text-xl text-gray-100 font-roboto">
+                            <input
+                                class="[outline:none] bg-white w-full h-[61px] absolute !m-[0] top-[0px] right-[0px] left-[0px] rounded-md box-border border-[1px] border-solid border-darkslategray-200"
+                                type="text" />
+
+                            <div
+                                class="self-stretch flex flex-row items-start justify-between max-w-full gap-[20px] mq1275:flex-wrap">
+                                <div
+                                    class="w-[816px] flex flex-col items-start justify-start pt-[3px] px-0 pb-0 box-border max-w-full">
+                                    <div
+                                        class="self-stretch flex flex-row items-start justify-start gap-[12px] max-w-full mq900:flex-wrap">
+                                        <img class="h-10 w-[43px] relative overflow-hidden shrink-0 z-[1]"
+                                            loading="lazy" alt="" src="/public/file-upload.svg" />
+
+                                        <div
+                                            class="flex-1 flex flex-col items-start justify-start pt-0.5 px-0 pb-0 box-border min-w-[495px] max-w-full mq900:min-w-full">
+                                            <div class="self-stretch relative font-light z-[1] mq450:text-base">
+                                                Send a message
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row items-start justify-start gap-[20px]">
+                                    <img class="h-10 w-[43px] relative object-cover min-h-[40px] z-[1]" loading="lazy"
+                                        alt="" src="/public/microphone@2x.png" />
+
+                                    <img class="h-10 w-[43px] relative object-cover min-h-[40px] z-[1]" loading="lazy"
+                                        alt="" src="/public/email-send@2x.png" />
+                                </div>
+                            </div>
+                            <div
+                                class="w-[1026px] flex flex-row items-start justify-center py-0 px-5 box-border max-w-full text-center text-base">
+                                <div class="w-80 relative font-light flex items-center justify-center shrink-0">
+                                    Powered by CBRE
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        var notifCardContainer = document.getElementById("notifCardContainer");
+        if (notifCardContainer) {
+            notifCardContainer.addEventListener("click", function (e) {
+                // Please sync "Outlook Update" to the project
+            });
+        }
+    </script>
+</body>
+
+</html>

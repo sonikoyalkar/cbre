@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./js/tailwind.config.js"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" />
+</head>
+
+<body>
+    <div class="w-full overflow-hidden flex font-roboto">
+        <div class="w-1/4 flex-col justify-between h-full overflow-hidden overflow-y-auto shadow  py-9 px-6">
+
+            <div class="h-fit h-full">
+                <div class="text-center text-emerald-700 font-inter mb-4">
+                    <h1 class="text-6xl font-bold">CBRE</h1>
+                </div>
+                <div class="text-6xl my-3">
+                    <b class="flex-1 relative text-2xl my-2">Notifications</b>
+                </div>
+                <div id="notifCardContainer" class="overflow-hidden overflow-y-auto space-y-2">
+                    <div
+                        class="bg-green-100 hover:border-green-700 flex justify-start cursor-pointer p-3 border rounded-xl">
+
+                        <img class="h-14 w-14 mr-3 relative rounded-[50%]" loading="lazy" alt=""
+                            src="./images/ellipse-1.png" />
+
+                        <div class="w-full">
+                            <div class="flex justify-between">
+                                <b class="">Rohan Kapoor</b>
+                                <div class="flex justify-end items-center text-sm font-inter space-x-1 ">
+
+                                    <div class="w-2.5 h-2.5 rounded-[100%] bg-green-300"></div>
+
+                                    <div class="text-sm text-neutral-500">3 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="text-base font-inter ">
+
+                                <div>From Outlook</div>
+                                <div>Re : Expanding horizons...</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="bg-green-100 hover:border-green-700 flex justify-start cursor-pointer p-3 border rounded-xl">
+
+                        <img class="h-14 w-14 mr-3 relative rounded-[50%]" loading="lazy" alt=""
+                            src="./images/ellipse-2.png" />
+
+                        <div class="w-full">
+                            <div class="flex justify-between">
+                                <b class="">Client Name</b>
+                                <div class="flex justify-end items-center text-sm font-inter space-x-1 ">
+
+                                    <!-- <div class="w-2.5 h-2.5 rounded-[100%] bg-green-300"></div> -->
+
+                                    <div class="text-sm text-neutral-500">13 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="text-base font-inter ">
+
+                                <div>From Outlook</div>
+                                <div>Re : Expanding horizons...</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-green-100 hover:border-green-700 flex justify-start cursor-pointer p-3 border rounded-xl">
+
+                        <img class="h-14 w-14 mr-3 relative rounded-[50%]" loading="lazy" alt=""
+                            src="./images/ellipse-1-2.png" />
+
+                        <div class="w-full">
+                            <div class="flex justify-between w-full">
+                                <b class="">Client Name</b>
+                                <div class="flex justify-end items-center text-sm font-inter space-x-1 ">
+
+                                    <!-- <div class="w-2.5 h-2.5 rounded-[100%] bg-green-300"></div> -->
+
+                                    <div class="text-sm text-neutral-500">53 mins ago</div>
+                                </div>
+                            </div>
+                            <div class="text-base font-inter ">
+
+                                <div>From Outlook</div>
+                                <div>Re : Expanding horizons...</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="py-4 text-2xl font-bold">
+                    Conversation History
+                </div>
+                <div class=" overflow-hidden overflow-y-auto space-y-2">
+
+
+                    <div>
+                        <div class="text-base text-gray-400 font-inter p-2">Today</div>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <div class="p-2 bg-green-100 rounded-md mr-2 "><img class="w-6 h-6"
+                                        src="./images/chat.png"></div>
+
+                                manastu space
+                            </div>
+
+                            <span class="flex items-center space-x-2">... <img class="w-6 h-6 ml-2" alt=""
+                                    src="./images/archive.png" /></span>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="text-base text-gray-400 font-inter">Past 7 days</div>
+                        <div class="flex justify-between items-center my-2">
+                            <div class="flex items-center">
+                                <div class="p-2 bg-green-100 rounded-md mr-2 "><img class="w-6 h-6"
+                                        src="./images/chat.png"></div>
+
+                                New Chat
+                            </div>
+                            <span class="flex items-center space-x-2">... <img class="w-6 h-6 ml-2" alt=""
+                                    src="./images/archive.png" /></span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center my-2">
+                            <div class="flex items-center">
+                                <div class="p-2 bg-green-100 rounded-md mr-2 "><img class="w-6 h-6"
+                                        src="./images/chat.png"></div>
+
+                                New Chat
+                            </div>
+                            <span class="flex items-center space-x-2">... <img class="w-6 h-6 ml-2" alt=""
+                                    src="./images/archive.png" /></span>
+
+                        </div>
+                        <div class="flex justify-between items-center my-2">
+                            <div class="flex items-center">
+                                <div class="p-2 bg-green-100 rounded-md mr-2 "><img class="w-6 h-6"
+                                        src="./images/chat.png"></div>
+                                New Chat
+                            </div>
+                            <span class="flex items-center space-x-2">... <img class="w-6 h-6 ml-2" alt=""
+                                    src="./images/archive.png" /></span>
+
+                        </div>
+                        <div class="flex justify-between items-center my-2">
+                            <div class="flex items-center">
+                                <div class="p-2 bg-green-100 rounded-md mr-2 "><img class="w-6 h-6"
+                                        src="./images/chat.png"></div>
+
+                                New Chat
+                            </div>
+                            <span class="flex items-center space-x-2">... <img class="w-6 h-6 ml-2" alt=""
+                                    src="./images/archive.png" /></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between px-2 py-2 rounded-lg border border-gray-500 mx-4 my-4">
+                <div class="flex space-x-3"> <img class="h-6 w-6" src="./images/ellipse-1-2.png"> <span>John Doe</span>
+                </div>
+                <img class="w-6 h-6" src="./images/Settings.png">
+            </div>
+
+
+        </div>
+        <main class="p-11 w-3/4 bg-gray-200">
+            <header class="p-4 w-full flex justify-between items-center border-b border-gray-500">
+                <img class="w-20 h-8" src="images/help1.png">
+                <img src="images/AskNidhi.png">
+                <button class="flex p-2 border-green-500 space-x-2 bg-green-100 rounded-lg shadow">
+                    <img src="./images/plus.png">
+                    <span> New Conversation </span>
+                </button>
+
+            </header>
+
+
+            <!-- <div class="flex justify-center w-full my-32 p-3">
+                <span>
+                    <h1 class="font-semibold text-4xl flex justify-center my-4">
+                        Welcome back John Doe!
+                    </h1>
+
+                    <div class="flex justify-center">
+                        How may I assist you today?
+                    </div>
+                </span>
+
+            </div> -->
+
+
+            <div class="text-base text-gray-400 font-inter flex justify-center p-2">Today</div>
+
+            <!-- <div
+            class="flex justify-between items-center text-x1 mx-16 my-1 text-gray-100 px-4 py-1 font-roboto bg-white rounded-md border">
+            <div class="w-1/6">
+                <img class="w-10 h-10" src="./images/ellipse-2.png">
+            </div>
+            <div class="px-2 py-2 w-5/6 ">
+                <span class="text-green-700">
+
+                    <span><b>You</b></span><br>@LeasingAssist
+                </span>
+                <span class="text-gray-500">
+                    Capture news articles for Investment Category from
+                    India for last week</span>
+
+            </div>
+            <span><button class="flex p-2 border-green-900 space-x-2 rounded-lg shadow">
+                    <img class="h-4 w-4" src="./images/pen.png">
+                </button>
+            </span>
+
+        </div> -->
+
+            <div
+                class="flex justify-between items-center text-x1 mx-16 my-1 text-gray-100 px-4 py-1 font-roboto bg-white rounded-md border">
+                <div class="w-1/6">
+                    <img class="w-16 h-16" src="./images/ellipse-2.png">
+                </div>
+                <div class="px-2 py-2 w-svw">
+                    <span class="text-green-700">
+
+                        <span><b>You</b></span><br>@LeasingAssist
+                    </span>
+                    <span class="text-gray-500">
+                        Capture news articles for Investment Category from
+                        India for last week</span>
+
+                </div>
+                <span><button class="flex p-2 border-green-900 space-x-2 rounded-lg shadow">
+                    <img class="h-4 w-4" src="./images/pen.png">
+                </button>
+            </span>
+
+            </div>
+
+            <div class="flex justify-between mx-16 bg-white border rounded-lg px-4 py-2 space-x-2 ">
+
+                <div class="w-1/12">
+                    <img class="w-16 h-16" src="./images/tree.png">
+                </div>
+                <div class="w-11/12">
+
+                    <div class="flex justify-between space-x-2">
+
+                        <div>
+                            <b class="">AskNidhi</b>
+                            <!-- <img src="./images/AskNidhi.png"> -->
+                            <br>
+                            Sure! Here are some recent news articles for the Investment Category from India for the last
+                            week :
+                        </div>
+
+                        <div class="flex h-6 space-x-2">
+                            <button class="p-2 border-green-900 rounded-lg shadow">
+                                <img src="./images/thumdown.png">
+                            </button>
+
+                            <button class="p-2 border-green-900 rounded-lg shadow">
+                                <img src="./images/thumup.png">
+                            </button>
+                            <button class="p-2 border-green-900 rounded-lg shadow">
+                                <img src="./images/share.png">
+                            </button>
+                        </div>
+                    </div>
+                    <section
+                        class="flex mt-3 text-xs space-x-2 text-gray-100 p-3 font-roboto bg-white rounded-lg border border-green-700">
+                        <img class="w-24 h-14" src="./images/rox.png">
+                        <span class="text-gray-500"><b>“ROX Hi-Tech Limited </b>Announces IPO Plans to Fuel Expansion
+                            and
+                            Technological Innovation" - ROX Hi-Tech, a customer-centric IT solutions provider, has filed
+                            for
+                            an IPO to enter the primary market. The company aims to raise funds for setting up a Network
+                            Operations Centre, Medical Automation Centre, and Global Software Delivery Center.”<br><br>
+                            (Source: PNN New Delhi) <u class="text-green-500">Read more</u></span>
+                    </section>
+                    <section
+                        class="flex mt-3 space-x-2 text-xs text-gray-100 p-3 font-roboto bg-white rounded-lg border border-green-700">
+                        <img  class="w-24 h-14"  src="./images/manastu.png">
+                        <span class="text-gray-500"><b>"Manastu Space </b>Raises 3 Millionin Pre-Series A Funding" -
+                            Space -
+                            techstartup Manastu Space has secured 3 million in funding for the development and
+                            deployment of
+                            its Green Propulsion and Debris Collision Avoidance System. The company has also secured
+                            contracts with the Indian Defense and partnerships with French startup Latitude and iDEX.
+                            <br>
+                            <br>
+                            (Source: YourStory) <u class="text-green-500">Read More</u></span>
+                    </section>
+
+                    <section
+                        class="flex mt-3 text-xs space-x-2 text-gray-100 p-3 font-roboto bg-white rounded-lg border border-green-700">
+                        <img class="w-24 h-14"  src="./images/gg.png">
+                        <span class="text-gray-500"><b>"GoodGudi </b>Raises Seed Money to Expand its Lifestyle Retail
+                            Chain"
+                            - GoodGudi, a fast lifestyle retail chain, has raised seed funding led by AC Ventures. The
+                            company plans to open over 40 retail stores within the next two years, offering various
+                            categories including home utility, travel accessories, fashion accessories, and more.
+                            <br>
+                            <br>(Source: AC Ventures) <u class="text-green-500">Read more</u></span>
+                    </section>
+                
+
+                    <!-- <section class="flex space-x-2 overflow-hidden my-3 text-sm">
+                        <div
+                            class="p-2 items-center border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                            <img class="inline" src="./images/direction.png">
+                            <span> Ask a following query </span>
+                        </div>
+                        <button
+                            class="flex p-2 items-center w-full border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                            <img src="./images/direction.png">
+                            <span><b class="text-green-500">@Nidhi</b> Extract contact details of Manastu Space from
+                                Sales Force
+                            </span>
+                        </button>
+                        <button
+                            class="w-full flex items-center p-2 border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                            <img src="./images/direction.png">
+                            <span>Followup Prompt 2 lorem ipsum dolor amet </span>
+                        </button>
+                        <button
+                            class="p-2 flex w-full  items-center border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                            <img src="./images/direction.png">
+                            <span> Followup Prompt 2 lorem ipsum dolor amet </span>
+                        </button>
+                    </section> -->
+
+                </div>
+            </div>
+            <div
+            class="flex justify-between items-center text-x1 mx-16 my-1 text-gray-100 px-4 py-1 font-roboto bg-white rounded-md border">
+            <div class="w-1/6">
+                <img class="w-16 h-16" src="./images/ellipse-2.png">
+            </div>
+            <div class="px-2 py-2 w-svw">
+                <span class="text-green-700">
+
+                    <span><b>You</b></span><br>@LeasingAssist
+                </span>
+                <span class="text-gray-500">
+                    Capture news articles for Investment Category from
+                    India for last week</span>
+
+            </div>
+            <span><button class="flex p-2 border-green-900 space-x-2 rounded-lg shadow">
+                <img class="h-4 w-4" src="./images/pen.png">
+                </button>
+            </span>
+
+        </div>
+        <div class="flex justify-between mx-16 bg-white border rounded-lg px-4 py-2 space-x-2 ">
+
+            <div class="w-1/12">
+                <img class="w-16 h-16" src="./images/tree.png">
+            </div>
+            <div class="w-11/12">
+
+                <div class="flex justify-between space-x-2">
+
+                    <div>
+                        <b class="">AskNidhi</b>
+                        <!-- <img src="./images/AskNidhi.png"> -->
+                        <br>
+                        Sure! Here are the contact information extracted from SalesForce
+                    </div>
+
+                    <div class="flex h-6 space-x-2">
+                        <button class="p-2 border-green-900 rounded-lg shadow">
+                            <img src="./images/thumdown.png">
+                        </button>
+
+                        <button class="p-2 border-green-900 rounded-lg shadow">
+                            <img src="./images/thumup.png">
+                        </button>
+                        <button class="p-2 border-green-900 rounded-lg shadow">
+                            <img src="./images/share.png">
+                        </button>
+                    </div>
+                </div>
+                
+
+             <div class="flex">
+                <section
+                    class="flex mx-1 my-1 space-x-3 items-start justify-start w-72 mt-3 text-xs space-x-1 text-gray-100 p-3 font-roboto bg-white rounded-lg border border-gray-500">
+                    <img class="m-1 h-10" src="./images/rohan.png">
+                    <span class="text-gray-500"><b>Rohan Kapoor</b><br>
+                        Founder, Manastu Space
+                        <div class=" flex space-x-2 my-1 items-center text-green-500"><img src="./images/message.png"><u>rohan.kapoor@manastuspace.com</u>
+                        </div>
+                        <div class="flex space-x-2 my-1 items-center text-green-500"><img src="./images/phone.png">+91 7065487900
+                        </div>
+                        </span>
+                </section>
+            
+                <section
+                class="flex mx-1 my-1 space-x-3 items-start justify-start w-72 mt-3 text-xs space-x-1 text-gray-100 p-3 font-roboto bg-white rounded-lg border border-gray-500">
+                <img class="m-1 h-10" src="./images/Ankitha.png">
+                <span class="text-gray-500"><b>Ankitha Sharma</b><br>
+                    Sr. Manager, Manastu Space
+                    <div class=" flex space-x-2 items-center my-1 text-green-500"><img src="./images/message.png"><u>ankitha.s@manastuspace.com</u>
+                    </div>
+                    <div class=" flex space-x-2 items-center my-1 text-green-500"><img src="./images/phone.png">+91 9967546783
+                    </div>
+                    </span>
+            </section>
+        </div> 
+        
+
+                <section class="flex space-x-2 overflow-hidden my-3 text-xs">
+                    <div
+                        class="p-2 items-center border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                        <img class="inline" src="./images/direction.png">
+                        <span> Ask a following query </span>
+                    </div>
+                    <div
+                        class="flex p-2 items-center w-full border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                        <img src="./images/direction.png">
+                        <span><b class="text-green-500">@Nidhi</b> Extract contact details of Manastu Space from
+                            Sales Force
+                        </span>
+                    </div>
+                    <div
+                        class="w-full flex items-center p-2 border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                        <img src="./images/direction.png">
+                        <span>Followup Prompt 2 lorem ipsum dolor amet </span>
+                    </div>
+                    <div
+                        class="p-2 flex w-full  items-center border-green-500 space-x-2 bg-green-100 text-nowrap rounded-lg shadow">
+                        <img src="./images/direction.png">
+                        <span> Followup Prompt 2 lorem ipsum dolor amet </span>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+            <div
+                class="flex text-xl mx-16 mt-3 text-gray-100 m-20 p-4 font-roboto bg-white rounded-lg border border-gray-700">
+                <img class="h-8 w-8" loading="lazy" alt="" src="./images/upload.png" />
+                <input class="w-full " type="text" placeholder="Send a message" />
+                <img class="h-8 w-8" loading="lazy" alt="" src="./images/microphone.png" />
+                <img class="h-8 w-8" loading="lazy" alt="" src="./images/email-send.png" />
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
